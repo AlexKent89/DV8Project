@@ -1,5 +1,5 @@
 from application import app
-from application.forms import BasicForm
+#from application.forms import BasicForm
 from flask import render_template, request, g, flash,redirect, url_for
 import pymysql
 from flask_httpauth import HTTPBasicAuth
