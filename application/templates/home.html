@@ -26,7 +26,8 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Amatic SC", sans-serif}
     <a href="#home" class="w3-bar-item w3-button">HOME</a>
     <a href="#coffee" class="w3-bar-item w3-button">COFFEE</a>
     <a href="#about" class="w3-bar-item w3-button">ABOUT</a>
-    <a href="#contact" class="w3-bar-item w3-button">CONTACT</a>
+    <a href="/register2">Register Details</a>
+    <a href="{{ url_for('display_records') }}">Admin</a>
   </div>
 </div>
 
@@ -131,24 +132,48 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Amatic SC", sans-serif}
 
   </div>
 </div>
-
 <!-- About Contact -->
- <div class="w3-container w3-padding-64 w3-blue-grey w3-grayscale-min w3-xlarge" id="contact">
+<!--<div class="w3-container w3-padding-64 w3-blue-grey w3-grayscale-min w3-xlarge" id="contact">
   <div class="w3-content">
     <h1 class="w3-center w3-jumbo" style="margin-bottom:64px"> contact</h1>
     <p>Find us at some address at some place or call us at 05050515-122330</p>
     <p><span class="w3-tag">FYI!</span> We offer full-service a small collection of specialist coffee.</p>
     <p class="w3-xxlarge"><strong>Please</strong> register you details for quicker checkout next time:</p>
-    <form action="/action_page.php" target="_blank">
-      <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Name" required name="Name"></p>
-      <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Address" required name="Address"></p>
-      <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Postcode" required name="Postcode"></p>
-      <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Email" required name="Email"></p>
-      <p><button class="w3-button w3-light-grey w3-block" type="submit">REGISTER</button></p>
+     <form action="process_form.php" method="post" target="_blank">
+      <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Name" required="" name="Name" fdprocessedid="p8lt4j"></p>
+      <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Address" required="" name="Address" fdprocessedid="qaeydu"></p>
+      <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Postcode" required="" name="Postcode" fdprocessedid="33cz1"></p>
+      <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Email" required="" name="Email" fdprocessedid="6h8yns"></p>
+      <p><button class="w3-button w3-light-grey w3-block" type="submit" fdprocessedid="5u8xc">REGISTER</button></p>
     </form>
   </div>
-</div>
+</div>-->
 
+  <!--fieldset>
+<legend>Register Form</legend>
+<form name="frmContact" method="post" action="contact.php">
+<p>
+<label for="Name">Name </label>
+<input type="text" name="txtName" id="txtName">
+</p>
+<p>
+<label for="address">Address</label>
+<input type="text" name="txtAddress" id="txtAddress">
+</p>
+<p>
+<label for="post_code">Post Code</label>
+<input type="text" name="txtPost_Code" id="txtPost_Code">
+</p>
+<p>
+<label for="email">Email</label>
+<textarea name="txtEmail" id="txtEmail"></textarea>
+</p>
+<p>&nbsp;</p>
+<p>
+<input type="submit" name="Submit" id="Submit" value="Submit">
+</p>
+</form>
+</fieldset-->
 
 <!-- Footer -->
 <footer class="w3-center w3-black w3-padding-48 w3-xxlarge">
