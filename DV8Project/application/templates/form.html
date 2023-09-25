@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>DV8 Coffee</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Amatic+SC">
+<style>
+body, html {height: 100%}
+body,h1,h2,h3,h4,h5,h6 {font-family: "Amatic SC", sans-serif}
+.menu {display: none}
+.bgimg {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("https://libreshot.com/wp-content/uploads/2016/03/coffee-beans-1.jpg");
+  min-height: 90%;
+}
+</style>
+</head>
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top w3-hide-small">
+  <div class="w3-bar w3-xlarge w3-black w3-opacity w3-hover-opacity-off" id="myNavbar">
+    <a href="#home" class="w3-bar-item w3-button">HOME</a>
+    <a href="#coffee" class="w3-bar-item w3-button">COFFEE</a>
+    <a href="#about" class="w3-bar-item w3-button">ABOUT</a>
+    <a href="#contact" class="w3-bar-item w3-button">CONTACT</a>
+    <!-- Add the shopping basket link -->
+    <a href="#" class="w3-bar-item w3-button w3-right">SHOPPING BASKET</a>
+  </div>
+</div>
+
+<!-- Header with image -->
+<header class="bgimg w3-display-container w3-grayscale-min" id="home">
+  <div class="w3-display-bottomleft w3-padding">
+    <span class="w3-tag w3-xlarge">Endorsed by Everyone!</span>
+  </div>
+  <div class="w3-display-middle w3-center">
+    <span class="w3-text-white w3-hide-small" style="font-size:100px"><br>Speciality Coffees</span>
+    <span class="w3-text-white w3-hide-large w3-hide-medium" style="font-size:80px"><b>DV8<br>Speciality Coffees</b></span>
+    <p><a href="#coffee" class="w3-button w3-xxlarge w3-black">Show me the beans</a></p>
+  </div>
+</header>
+
+<!-- Menu Container -->
+<div class="w3-container w3-black w3-padding-64 w3-xxlarge" id="coffee">
+  <div class="w3-content">
+    <h1 class="w3-center w3-jumbo" style="margin-bottom:64px">Our Coffees</h1>
+    <div class="w3-row w3-center w3-border w3-border-dark-grey">
+      <a href="javascript:void(0)" onclick="openMenu(event, 'ARABICA');" id="myLink">
+        <div class="w3-col s4 tablink w3-padding-large w3-hover-red">ARABICA</div>
+      </a>
+      <a href="javascript:void(0)" onclick="openMenu(event, 'ROBUSTA');">
+        <div class="w3-col s4 tablink w3-padding-large w3-hover-red">ROBUSTA</div>
+      </a>
+      <a href="javascript:void(0)" onclick="openMenu(event, 'LIBERICA');">
+        <div class="w3-col s4 tablink w3-padding-large w3-hover-red">LIBERICA</div>
+      </a>
+    </div>
+  </div>
+
+  <div id="ARABICA" class="w3-container menu w3-padding-32 w3-white">
+     <h1><b>Colombian</b> <span class="w3-right w3-tag w3-dark-grey w3-round"> </span></h1>
+     <p class="w3-text-grey">This smooth Colombian Bucaramanga roasted coffee bean is rich and delicious, for a full and complex arabica coffee with hints of chocolate and nut flavors.</p>
+     <hr>
+     <h2>Sizes and Prices</h2>
+     <ul>
+        <li><b>Small 200g:</b> $10.00 <a href="#$10.00" class="w3-button">Buy</a></li>
+        <li><b>Medium 400g:</b> $12.50 <a href="#$12.50" class="w3-button">Buy</a></li>
+        <li><b>Large 600g:</b> $15.00 <a href="#$15.00" class="w3-button">Buy</a></li>
+    </ul>
+  </div>
+
+  <div id="ROBUSTA" class="w3-container menu w3-padding-32 w3-white">
+    <h1><b>Colombian</b> <span class="w3-tag w3-grey w3-round">Popular!</span> <span class="w3-right w3-tag w3-dark-grey w3-round"></span></h1>
+    <p class="w3-text-grey">100% Robusta Roasted Beans. Dark Roast.</p>
+    <hr>
+    <ul>
+      <li><b>Small 200g:</b> $10.00 <a href="#$10.00" class="w3-button">Buy</a></li>
+      <li><b>Medium 400g:</b> $12.50 <a href="#$12.50" class="w3-button">Buy</a></li>
+      <li><b>Large 600g:</b> $15.00 <a href="#$15.00" class="w3-button">Buy</a></li>
+    </ul>
+  </div>
+
+  <div id="LIBERICA" class="w3-container menu w3-padding-32 w3-white">
+    <h1><b>Colombian</b> <span class="w3-tag w3-grey w3-round">Best Seller!</span><span class="w3-right w3-tag w3-dark-grey w3-round"></span></h1>
+    <p class="w3-text-grey">These beans are typically larger than other types of coffee beans and have a distinctively fruity flavor.</p>
+    <hr>
+    <ul>
+      <li><b>Small 200g:</b> $10.00 <a href="#$10.00" class="w3-button">Buy</a></li>
+      <li><b>Medium 400g:</b> $12.50 <a href="#$12.50" class="w3-button">Buy</a></li>
+      <li><b>Large 600g:</b> $15.00 <a href="#$15.00" class="w3-button">Buy</a></li>
+    </ul>
+  </div>
+
+  <!-- Add other coffee types here as needed -->
+
+</div>
+</div>
+
+<!-- About Container -->
+<div class="w3-container w3-padding-64 w3-red w3-grayscale w3-xlarge" id="about">
+  <div class="w3-content">
+    <h1 class="w3-center w3-jumbo" style="margin-bottom:64px">About us</h1>
+    <p>This is a purely fictional coffee website for our wholesale and shop! </p>
+    <p>Proudly delivered to you by Alex, Dan, Daren, Ryan, and Vanessa  </p>
+    <p><strong>New Logo!</strong><img src="C:/Users/danne/Downloads/dv8-coffee-high-resolution-logo-color-on-transparent-background.png" style="width:150px" class="w3-circle w3-right" alt="DV8"></p>
+    <p>We are proud of our quality coffee.</p>
+    <img src="https://www.downtowngreensburgpa.us/wp-content/uploads/2022/04/278500086_453479059907338_7369646132515973973_n-800x400.jpg" style="width:100%" class="w3-margin-top w3-margin-bottom" alt="Restaurant">
+    <h1><b>Opening Hours</b></h1>
+    <div class="w3-row">
+      <div class="w3-col s6">
+        <p>Monday 07:00 - 23:00</p>
+        <p>Tuesday 07:00 - 23:00 </p>
+        <p>Wednesday 07:00 - 23:00</p>
+        <p>Thursday 07:00 - 23:00</p>
+      </div>
+      <div class="w3-col s6">
+        <p>Friday 07:00 - 23:00</p>
+        <p>Saturday 09:00 - 23:00</p>
+        <p>Sunday 10:00 - 20:00</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- About Contact -->
+<div class="w3-container w3-padding-64 w3-blue-grey w3-grayscale-min w3-xlarge" id="contact">
+  <div class="w3-content">
+    <h1 class="w3-center w3-jumbo" style="margin-bottom:64px"> contact</h1>
+    <p>Find us at some address at some place or call us at 05050515-122330</p>
+    <p><span class="w3-tag">FYI!</span> We offer full-service a small collection of specialist coffee.</p>
+    <p class="w3-xxlarge"><strong>Please</strong> register your details for quicker checkout next time:</p>
+    <section id="Register">
+      <h2>Register</h2>
+      <form action="/submit" method="post" target="_blank">
+        <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Name" required name="Name"></p>
+        <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Address" required name="Address"></p>
+        <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Postcode" required name="Postcode"></p>
+        <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Email" required name="Email"></p>
+        <p><button class="w3-button w3-light-grey w3-block" type="submit">REGISTER</button></p>
+      </form>
+    </section>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-48 w3-xxlarge">
+  <p><img src="C:/Users/danne/Downloads/dv8-coffee-high-resolution-logo-color-on-transparent-background.png" style="width:150px" class="w3-circle w3-right" alt="DV8"></p>
+</footer>
+
+<script>
+// Tabbed Menu
+function openMenu(evt, menuName) {
+  var i, x, tablinks;
+  x = document.getElementsByClassName("menu");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" w3-red", "");
+  }
+  document.getElementById(menuName).style.display = "block";
+  evt.currentTarget.firstElementChild.className += " w3-red";
+}
+document.getElementById("myLink").click();
+</script>
+
+</body>
+</html>
+
+
+
+

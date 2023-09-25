@@ -1,0 +1,20 @@
+CCREATE TABLE IF NOT EXISTS `mydb`.`DV8Customers` (
+  `customer_id` INT NOT NULL AUTO_INCREMENT,
+  `name` VARCHAR(45) NULL,
+  `address` VARCHAR(100) NULL,
+  `postcode` VARCHAR(45) NULL,
+  `email` VARCHAR(100) NULL,
+  PRIMARY KEY (`customer_id`))
+ENGINE = InnoDB
+
+
+INSERT INTO `mydb`.`DV8Customers` (`customer_id`, `name`, `address`, `postcode`, `email`) VALUES (1, 'sarah green', '1 west way, kent', 'TN1 2AL', 'ss@dv8.com');
+INSERT INTO `mydb`.`DV8Customers` (`customer_id`, `name`, `address`, `postcode`, `email`) VALUES (2, 'dave moon', '4 green close, london', 'SW7 3WS', 'davejones@dv8.com');
+INSERT INTO `mydb`.`DV8Customers` (`customer_id`, `name`, `address`, `postcode`, `email`) VALUES (3, 'emma wilson', '2 wilson way, cambridge', 'CB1 1WD', 'emmawilson@dv8.com');
+INSERT INTO `mydb`.`DV8Customers` (`customer_id`, `name`, `address`, `postcode`, `email`) VALUES (4, 'mia williams', '7 williams road, london', 'SE19 4RS', 'miawilliams@dv8.com');
+INSERT INTO `mydb`.`DV8Customers` (`customer_id`, `name`, `address`, `postcode`, `email`) VALUES (5, 'oliver anderson', '91 anderson way, cardiff', 'CF3 2ES', 'oliveranderson@dv8.com');
+INSERT INTO `mydb`.`DV8Customers` (`customer_id`, `name`, `address`, `postcode`, `email`) VALUES (6, 'anna wilson', '30 wilson green, edinburgh', 'EH3 9QA', 'annawilson@dv8.com');
+INSERT INTO `mydb`.`DV8Customers` (`customer_id`, `name`, `address`, `postcode`, `email`) VALUES (7, 'charlie miller', '60 miller close, woking', 'RH4 8HG', 'charliemiller@dv8.com');
+INSERT INTO `mydb`.`DV8Customers` (`customer_id`, `name`, `address`, `postcode`, `email`) VALUES (8, 'liam johnson', '12 castle hill, windsor', 'SL4 1UT', 'liamjohnson@dv8.com');
+INSERT INTO `mydb`.`DV8Customers` (`customer_id`, `name`, `address`, `postcode`, `email`) VALUES (9, 'grace allen', '11 allen avenue, ashford', 'TN23 7ds', 'graceallen@dv8.com');
+INSERT INTO `mydb`.`DV8Customers` (`customer_id`, `name`, `address`, `postcode`, `email`) VALUES (10, 'adam baker', '12 baker road, london', 'BA5 7ER', 'adambaker@dv8.om');
