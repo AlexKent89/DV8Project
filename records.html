@@ -1,0 +1,27 @@
+<!-- records.html -->
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- Add your head content here -->
+</head>
+<body>
+    <h1>Database Records</h1>
+    <table>
+        <tr>
+            <th>Name</th>
+            <th>Address</th>
+            <th>Postcode</th>
+            <th>Email</th>
+        </tr>
+        {% for record in records %}
+        <tr>
+            <td>{{ record.first_name }}</td>
+            <td>{{ record.last_name }}</td>
+            <td>{{ record.address }}</td>
+            <td>{{ record.postcode }}</td>
+            <td>{{ record.email }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>
