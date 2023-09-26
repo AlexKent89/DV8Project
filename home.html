@@ -13,36 +13,21 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Amatic SC", sans-serif}
 .bgimg {
   background-repeat: no-repeat;
   background-size: cover;
-  background-image: url("https://libreshot.com/wp-content/uploads/2016/03/coffee-beans-1.jpg");
+  background-image: url("static/coffee-beans-1.jpg");
   min-height: 90%;
 }
 </style>
 </head>
 <body>
-
 <!-- Navbar (sit on top) -->
 <div class="w3-top w3-hide-small">
   <div class="w3-bar w3-xlarge w3-black w3-opacity w3-hover-opacity-off" id="myNavbar">
     <a href="#home" class="w3-bar-item w3-button">HOME</a>
     <a href="#coffee" class="w3-bar-item w3-button">COFFEE</a>
     <a href="#about" class="w3-bar-item w3-button">ABOUT</a>
-    <a href="#contact" class="w3-bar-item w3-button">CONTACT</a>
-    <!-- Add the shopping basket link -->
-    <a href="#" class="w3-bar-item w3-button w3-right">SHOPPING BASKET</a>
-
- <!-- </div>
-   Navbar (sit on top)
-  <div class="w3-top w3-hide-small">
-   <div class="w3-bar w3-xlarge w3-black w3-opacity w3-hover-opacity-off" id="myNavbar">-->
-    <!-- ... (other menu items) "comment"
-
-     Shopping basket link with item count "comment"
-    <a href="#" class="w3-bar-item w3-button w3-right">
-      SHOPPING BASKET <span id="itemCount">0</span>
-    </a>
-   </div> -->
+    <a href="/register2">Register Details</a>
+    <a href="{{ url_for('display_records') }}">Admin</a>
   </div>
-
 </div>
 
 <!-- Header with image -->
@@ -74,97 +59,47 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Amatic SC", sans-serif}
       </a>
     </div>
 
- <!--   <div id="ARABICA" class="w3-container menu w3-padding-32 w3-white">
+    <div id="ARABICA" class="w3-container menu w3-padding-32 w3-white">
       <h1><b>Colombian</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$12.50 <a href="#$12.50" class="w3-button">Buy</a></span></h1>
       <p class="w3-text-grey">This smooth Colombian Bucaramanga roasted coffee bean is rich and delicious, for a full and complex arabica coffee with hints of chocolate and nut flavours.</p>
-      <hr> -->
-    <div id="ARABICA" class="w3-container menu w3-padding-32 w3-white">
-     <h1><b>Colombian</b> <span class="w3-right w3-tag w3-dark-grey w3-round"> </span></h1>
-     <p class="w3-text-grey">This smooth Colombian Bucaramanga roasted coffee bean is rich and delicious, for a full and complex arabica coffee with hints of chocolate and nut flavors.</p>
-     <hr>
-     <h2>Sizes and Prices</h2>
-     <ul>
-        <li><b>Small 200g:</b> $10.00 <a href="#$10.00" class="w3-button">Buy</a></li>
-        <li><b>Medium:400g</b> $12.50 <a href="#$12.50" class="w3-button">Buy</a></li>
-        <li><b>Large: 600g</b> $15.00 <a href="#$15.00" class="w3-button">Buy</a></li>
-    </ul>
+      <hr>
 
-
-      <h1><b>Brazilian</b> <span class="w3-right w3-tag w3-dark-grey w3-round"></span></h1>
+      <h1><b>Brazilian</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$15.50 <a href="#$15.50" class="w3-button">Buy</a></span></h1>
       <p class="w3-text-grey">Brazil Yellow Bourbon is the first class Brazilian Arabica beans, characterised by low acidity and delicate flavour with gentle, sweet aroma.</p>
       <hr>
-    <ul>
-        <li><b>Small 200g:</b> $10.00 <a href="#$10.00" class="w3-button">Buy</a></li>
-        <li><b>Medium:400g</b> $12.50 <a href="#$12.50" class="w3-button">Buy</a></li>
-        <li><b>Large: 600g</b> $15.00 <a href="#$15.00" class="w3-button">Buy</a></li>
-    </ul>
-      <h1><b>Ethiopian</b> <span class="w3-right w3-tag w3-dark-grey w3-round"></span></h1>
+
+      <h1><b>Ethiopian</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$17.00 <a href="#$17.00" class="w3-button">Buy</a></span></h1>
       <p class="w3-text-grey">Sourced from coffee's birthplace, Ethiopian Yirgacheffe coffee is a premium, gourmet hand-roasted coffee bean with hints of berry-like fruitiness.</p>
       <hr>
-     <ul>
-        <li><b>Small 200g:</b> $10.00 <a href="#$10.00" class="w3-button">Buy</a></li>
-        <li><b>Medium:400g</b> $12.50 <a href="#$12.50" class="w3-button">Buy</a></li>
-        <li><b>Large: 600g</b> $15.00 <a href="#$15.00" class="w3-button">Buy</a></li>
-    </ul>
     </div>
 
     <div id="ROBUSTA" class="w3-container menu w3-padding-32 w3-white">
-      <h1><b>Colombian</b> <span class="w3-tag w3-grey w3-round">Popular!</span> <span class="w3-right w3-tag w3-dark-grey w3-round"></span></h1>
+      <h1><b>Colombian</b> <span class="w3-tag w3-grey w3-round">Popular!</span> <span class="w3-right w3-tag w3-dark-grey w3-round">$13.50 <a href="#$17.00" class="w3-button">Buy</a> </span></h1>
       <p class="w3-text-grey">100% Robusta Roasted Beans. Dark Roast. </p>
       <hr>
-      <ul>
-        <li><b>Small 200g:</b> $10.00 <a href="#$10.00" class="w3-button">Buy</a></li>
-        <li><b>Medium:400g</b> $12.50 <a href="#$12.50" class="w3-button">Buy</a></li>
-        <li><b>Large: 600g</b> $15.00 <a href="#$15.00" class="w3-button">Buy</a></li>
-    </ul>
 
-      <h1><b>Brazilian</b> <span class="w3-right w3-tag w3-dark-grey w3-round"></span></h1>
+      <h1><b>Brazilian</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$14.50 <a href="#$17.00" class="w3-button">Buy</a> </span></h1>
       <p class="w3-text-grey">The Conilon (Robusta) beans are grown at low altitudes and have an earthy flavour with a somewhat nutty aftertaste</p>
       <hr>
-      <ul>
-        <li><b>Small 200g:</b> $10.00 <a href="#$10.00" class="w3-button">Buy</a></li>
-        <li><b>Medium:400g</b> $12.50 <a href="#$12.50" class="w3-button">Buy</a></li>
-        <li><b>Large: 600g</b> $15.00 <a href="#$15.00" class="w3-button">Buy</a></li>
-    </ul>
 
-      <h1><b>Ethiopian</b> <span class="w3-right w3-tag w3-dark-grey w3-round"></span></h1>
+      <h1><b>Ethiopian</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$11.00 <a href="#$17.00" class="w3-button">Buy</a> </span></h1>
       <p class="w3-text-grey">Ethiopian Robusta beans tend to have a more robust and earthy flavor profile, often described as having notes of dark chocolate and bitterness</p>
       <hr>
-      <ul>
-        <li><b>Small 200g:</b> $10.00 <a href="#$10.00" class="w3-button">Buy</a></li>
-        <li><b>Medium:400g</b> $12.50 <a href="#$12.50" class="w3-button">Buy</a></li>
-        <li><b>Large: 600g</b> $15.00 <a href="#$15.00" class="w3-button">Buy</a></li>
-    </ul>
     </div>
 
 
     <div id="LIBERICA" class="w3-container menu w3-padding-32 w3-white">
-      <h1><b>Colombian</b> <span class="w3-tag w3-grey w3-round">Best Seller!</span><span class="w3-right w3-tag w3-dark-grey w3-round"></span></h1>
+      <h1><b>Colombian</b> <span class="w3-tag w3-grey w3-round">Best Seller!</span><span class="w3-right w3-tag w3-dark-grey w3-round">$9.50 <a href="#$17.00" class="w3-button">Buy</a> </span></h1>
       <p class="w3-text-grey">These beans are typically larger than other types of coffee beans, and have a distinctively fruity flavor.</p>
       <hr>
-      <ul>
-        <li><b>Small 200g:</b> $10.00 <a href="#$10.00" class="w3-button">Buy</a></li>
-        <li><b>Medium:400g</b> $12.50 <a href="#$12.50" class="w3-button">Buy</a></li>
-        <li><b>Large: 600g</b> $15.00 <a href="#$15.00" class="w3-button">Buy</a></li>
-    </ul>
 
-      <h1><b>Brazilian</b> <span class="w3-right w3-tag w3-dark-grey w3-round"> </span></h1>
+      <h1><b>Brazilian</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$8.50 <a href="#$17.00" class="w3-button">Buy</a> </span></h1>
       <p class="w3-text-grey">Liberica beans are black roasted with a sweet and fruity taste.</p>
       <hr>
-      <ul>
-        <li><b>Small 200g:</b> $10.00 <a href="#$10.00" class="w3-button">Buy</a></li>
-        <li><b>Medium:400g</b> $12.50 <a href="#$12.50" class="w3-button">Buy</a></li>
-        <li><b>Large: 600g</b> $15.00 <a href="#$15.00" class="w3-button">Buy</a></li>
-    </ul>
 
-      <h1><b>Ethiopian</b> <span class="w3-right w3-tag w3-dark-grey w3-round"> </span></h1>
+      <h1><b>Ethiopian</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$9.50 <a href="#$17.00" class="w3-button">Buy</a> </span></h1>
       <p class="w3-text-grey">It is much smoother in tasting than others beans. Its front palate flavor is similar to Arabica.</p>
       <hr>
-      <ul>
-        <li><b>Small 200g:</b> $10.00 <a href="#$10.00" class="w3-button">Buy</a></li>
-        <li><b>Medium:400g</b> $12.50 <a href="#$12.50" class="w3-button">Buy</a></li>
-        <li><b>Large: 600g</b> $15.00 <a href="#$15.00" class="w3-button">Buy</a></li>
-    </ul>
 
   </div>
 </div>
@@ -196,24 +131,6 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Amatic SC", sans-serif}
 
   </div>
 </div>
-
-<!-- About Contact -->
- <div class="w3-container w3-padding-64 w3-blue-grey w3-grayscale-min w3-xlarge" id="contact">
-  <div class="w3-content">
-    <h1 class="w3-center w3-jumbo" style="margin-bottom:64px"> contact</h1>
-    <p>Find us at some address at some place or call us at 05050515-122330</p>
-    <p><span class="w3-tag">FYI!</span> We offer full-service a small collection of specialist coffee.</p>
-    <p class="w3-xxlarge"><strong>Please</strong> register you details for quicker checkout next time:</p>
-    <form action="/action_page.php" target="_blank">
-      <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Name" required name="Name"></p>
-      <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Address" required name="Address"></p>
-      <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Postcode" required name="Postcode"></p>
-      <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Email" required name="Email"></p>
-      <p><button class="w3-button w3-light-grey w3-block" type="submit">REGISTER</button></p>
-    </form>
-  </div>
-</div>
-
 
 <!-- Footer -->
 <footer class="w3-center w3-black w3-padding-48 w3-xxlarge">
